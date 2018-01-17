@@ -1,6 +1,6 @@
-$(function(){
+/*$(function(){
     carouselList = $("#carousel ul");
-    setInterval(changeSlide, 3000);
+    setInterval(changeSlide, 2000);
 });
 
 function changeSlide() {
@@ -12,24 +12,32 @@ function moveFirstSlide() {
     var lastItem = $("#carousel ul").find("li:last");
     lastItem.after(firstItem)
     $("#carousel ul").css({marginLeft:0});
-}
+} */
 
 // To samo co wyzej ale pierwsza wersja zapisu //
-/*
+
 $(function(){
     var carouselList = $("#carousel ul");
+    setInterval(changeSlide, 3000);
 });
 
-var timer = setInterval(changeSlide, 3000);
-
 function changeSlide() {
-    $carouselList.animate({'marginLeft':-800}, 500, moveFirstSlide);
-
+    $("#carousel ul").animate({'marginLeft':-300}, 500, moveFirstSlide);
 }
 
 function moveFirstSlide() {
-    var firstItem = carouselList.find("li:first");
-    var lastItem = carouselList.find("li:last");
+    var firstItem = $("#carousel ul").find("li:first");
+    var lastItem = $("#carousel ul").find("li:last");
     lastItem.after(firstItem)
-    carouselList.css({marginLeft:0});
+    $("#carousel ul").css({marginLeft: 0});
 }
+
+$( "#clickme" ).click(function() {
+    $( "#book" ).animate({
+        opacity: 0.25,
+        left: "+=50",
+        height: "toggle"
+    }, 5000, function() {
+        // Animation complete.
+    });
+});
