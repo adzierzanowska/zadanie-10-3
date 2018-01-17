@@ -3,13 +3,9 @@ $(function(){
     setInterval(changeSlide, 3000);
 });
 
-
-
-
 function changeSlide() {
     $("#carousel ul").animate({'marginLeft':-400}, 500, moveFirstSlide);
 }
-
 
 function moveFirstSlide() {
     var firstItem = $("#carousel ul").find("li:first");

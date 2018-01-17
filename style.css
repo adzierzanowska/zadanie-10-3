@@ -17,8 +17,7 @@ div#carousel ul {
 div#carousel ul li {
     width: 400px;
     list-style: none;
-    /*float: left;
-    right: 20px;
+    float: left;
     /*margin: auto;*/
     /*text-align: left;
     position: absolute; */
