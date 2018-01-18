@@ -1,10 +1,10 @@
-
 div#carousel {
     text-align: center;
     margin: 15px auto;
     width: 400px;
     height: 400px;
     border: 2px solid;
+    border-radius: 50px;
     position: relative;
     overflow: auto;
     /*float: left; */
@@ -13,6 +13,7 @@ div#carousel {
 div#carousel ul {
     width: 2040px;
     list-style: none;
+    padding: 0;
 }
 
 div#carousel ul li {
@@ -27,25 +28,20 @@ div#carousel ul li img {
     height: 100%;
 }
 
-/*.image-shown {
-    display: inline-block;
-}
+/* PRZYCISKI */
 
-.image-hidden {
-    display: none;
-} */
-
-/*.previousLink, .nextLink {
+/* .previousLink, .nextLink {
     float: left;
     margin-top: 200px;
 }
 
 .previousLink {
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .nextLink {
     margin-left: 20px;
-}
+} */
 
 
